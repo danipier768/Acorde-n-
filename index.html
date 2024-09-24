@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Acordeon</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Preguntas frecuentes cuando aprendes música</h1>
+        </header>
+        <div>
+            <p>Responderemos diferentes preguntas a la hora de aprender música</p>
+        </div>
+
+        <div class="acordeon">
+            <div class="contenedor">
+                <div class="label">¿Cómo puedo mejorar mi técnica con este instrumento o voz?</div>
+                <div class="content">Practica escalas, arpegios y ejercicios técnicos diariamente, enfocándote en precisión y control. Mantén una rutina constante.</div>
+            </div>
+            <div class="contenedor">
+                <div class="label">¿Cuál es la teoría detrás de esta pieza o estilo musical?</div>
+                <div class="content">Estudia la tonalidad, acordes y progresiones principales. Comprende la estructura melódica y armónica del estilo que interpretas.</div>
+            </div>
+            <div class="contenedor">
+                <div class="label">¿Cómo se interpreta emocionalmente esta pieza?</div>
+                <div class="content">Investiga el contexto emocional y utiliza la dinámica y el tempo para expresar la intención. Escucha diferentes interpretaciones.</div>
+            </div>
+            <div class="contenedor">
+                <div class="label">¿Qué patrones rítmicos son característicos de este género musical?</div>
+                <div class="content">Aprende los ritmos clave del género: rock (backbeat), jazz (swing), géneros latinos (clave). Escucha y repite estos patrones.</div>
+            </div>
+            <div class="contenedor">
+                <div class="label">¿Cómo puedo mejorar mi oído musical para identificar notas, acordes y progresiones?</div>
+                <div class="content">Practica ejercicios de reconocimiento de intervalos y acordes. Usa aplicaciones o ejercicios de oído para mejorar gradualmente.</div>
+            </div>
+            <div class="contenedor">
+                <div class="label">¿Qué errores comunes debo evitar cuando practico?</div>
+                <div class="content">Evita practicar sin concentración, no corregir errores y apresurar el tempo. Siempre calienta antes de tocar o cantar.</div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        const items = document.querySelectorAll('.contenedor');
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
